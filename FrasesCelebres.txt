@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Frase celebre</title>
+  </head>
+  <body>
+    <strong>Rellene su frase celebre</strong>
+    <p>nombre</p>
+    <p><input type="text" name="nom_usu" value=""size="20"></p>
+    <p>Frases celebres</p>
+    <p><textarea name="frase" rows="2" cols="120"></textarea></p>
+    <p>Selecci&oacute;n de frase principal</p>
+    <p><textarea name="frase principal" rows="2" cols="120"></textarea></p>
+    <form class="enviar" action="frontend.html" method="post">
+      <input type="submit" name="eniar_b" value="enviar">
+    </form>
+    <form action="frontend.html" method="post" name="correo">
+      <input type="submit" name="en_correo" value="Enviar correo">
+    </form>
+  </body>
+</html>
