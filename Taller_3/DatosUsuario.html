@@ -7,32 +7,32 @@
 				<body>
 								<h3>Rellena tu cv</h3>
 								<form>
-												Nombre</br>
-												<input type="text" name="nombre" value=""/></br>
-												Apellidos</br>
-												<input type="text" name="apellidos" value="" size="50"></br>
-												Contraseña</br>
-												<input type="password" name="contraseña" value=""></br>
-												Confirme contraseña</br>
-												<input type="password" name="confirmación" value=""></br>
-												Identificación</br>
+												Nombre<p></p>
+												<input type="text" name="nombre" value=""/><p></p>
+												Apellidos<p></p>
+												<input type="text" name="apellidos" value="" size="50"><p></p>
+												Contraseña<p></p>
+												<input type="password" name="contraseña" value=""><p></p>
+												Confirme contraseña<p></p>
+												<input type="password" name="confirmación" value=""><p></p>
+												Identificación<p></p>
 								<select name="tipoID">
 												<option value="TI">TI</option>
 												<option value="CC" selected>CC</option>
 												<option value="CE">CE</option>
 								</select>
-								<input type="text" name="id" value=""></br>
+								<input type="text" name="id" value=""><p></p>
 								Sexo</br>
 								<input type="radio" name="hombre">
 								Hombre</br>
-								<input type="radio" name="mujer">
+								<input type="radio" name="hombre">
 								Mujer</br>
-								Incluir mi foto</br>
-								<input type="file" name="Examinar..."></br>
-								<input type="checkbox" name="estudiante"> Soy estudiante</br>
+								Incluir mi foto<p></p>
+								<input type="file" name="Examinar..."><p></p>
+								<input type="checkbox" name="estudiante"> Soy estudiante<p></p>
 								<fieldset>
 												<legend>Datos personales</legend>
-												Departamento</br>
+												Departamento<p></p>
 												<select name="departamento">
 																<option value="Amazonas">Amazonas</option>
 																<option value="Antioquia">Antioquia</option>
@@ -66,8 +66,8 @@
 																<option value="Valle del Cauca">Valle del Cauca</option>
 																<option value="Vaupés">Vaupés</option>
 																<option value="Vichada">Vichada</option>
-												</select></br>
-												Fecha de nacimiento</br>
+												</select><p></p>
+												Fecha de nacimiento<p></p>
 												<input type="text" size="2" value="">
 												 de 
 												 <select name="mes">
@@ -86,15 +86,17 @@
 												 				<option value="diciembre">diciembre</option>
 												 </select>
 												  de 
-												 <input type="text" name="año" value="" size="5"></br>
-												 Temas de interés</br>
-												 <input type="checkbox">Administración de bases de datos.</br>
-												 				<input type="checkbox">Análisis y programación</br>
-												 				<input type="checkbox">Arquitectura</br>
-												 				<input type="checkbox">calidad</br>
-												 				<input type="checkbox">ERP, CRM, Businesses intelligence.
-												 </select>
-								</fieldset>
+												 <input type="text" name="año" value="" size="5"><p></p>
+												 Temas de interés
+<p></p>
+												 
+								</fieldset></br>
+<input type="reset" value="Borrar los datos introducidos">
+</form>
+<p></p>
+<form class="enviar" action="Enviar.html" method="post">
+<input type="submit" name="enviar_b" value="Guardar cambios">
+								</form>
 								</form>
 				</body>
 </html>
