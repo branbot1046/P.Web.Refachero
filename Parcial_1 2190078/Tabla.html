@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tabla de calorias</title>
+    <script>var editar=true;</script>
+    <link rel="stylesheet" href="css/estilo_tabla.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script type="text/javascript" src="js/edicion.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <fieldset style="text-align: center;">
+        <legend style="font-size: 35px">Tabla de Calorias</legend>
+        <table class="table table-hover" >
+          <caption>Contenido nutricional por cada 100 g de alimento.</caption>
+          <tr> 
+            <th>Alimento</th> 
+            <th>Calorías (kCal)</th> 
+            <th>Grasas (g)</th>
+            <th>Proteína (g)</th> 
+            <th>Carbohidratos (g)</th>
+            <th>Ok</th>
+            <th>Opciones</th>
+          </tr>
+          <form id="1" action="recibido.html" method="get">
+            <tr fila_id="fila_1" id="fila">
+              <td><div class="fila_datos">Arandano</div><input name="alimento" type="text" class="form-control" value="Arandano" size="100"></td>
+              <td><div class="fila_datos">49</div><input name="caloria" type="text" class="form-control" value="49" size="4"></td>
+              <td><div class="fila_datos">0.2</div><input name="grasa" type="text" class="form-control" step="0.01" value="0.2" size="8"></td>
+              <td><div class="fila_datos">0.4</div><input name="proteina" type="text" class="form-control" step="0.01" value="0.4" size="8"></td>
+              <td><div class="fila_datos">12.7</div><input name="carbohidrato" type="text" class="form-control" step="0.01" value="12.7" size="8"></td>
+              <td><div class="fila_datos1"><div style="color:#000000"><i class="fas fa-smile-beam"></i></div> 
+              
+              <select name="menu" id="slc1" class="selc_ok">
+                <option value="0">Mal</option>
+                <option value="1">Bien</option>
+              </select>
+              </div></td>
+              <td>
+                
+                <div class="1tx_edit"><a href="#" class="btn btn-link" style="color:#D8911C" id="ffila_1">Editar</a><a href="#" class="text-secondary">En edicion</a></p></div>                                                  
+    
+              </td>
+            </tr>
+          </form>
+          <form id="2" action="recibido.html" method="get">
+            <tr fila_id="fila_2" id="fila1">
+              <td ><div class="fila_data">Platano</div><input name="alimento" type="text" class="form-control" value="Platano" size="10"></td>
+              <td ><div class="fila_data">90</div><input name="caloria" type="text" class="form-control" value="90" size="4"></td>
+              <td ><div class="fila_data">0.3</div><input name="grasa" type="text" class="form-control" step="0.01" value="0.3" size="8"></td>
+              <td ><div class="fila_data">1.0</div><input name="proteina" type="text" class="form-control" step="0.01" value="1.0" size="8"></td>
+              <td ><div class="fila_data">23.5</div><input name="carbohidrato" type="text" class="form-control" step="0.01" value="23.5" size="8"></td>
+              <td ><div class="fila_data1"><div style="color:#000000"><i class="fas fa-skull-crossbones"></i></div>
+                
+              <select name="menu" id="slc2" class="selc_ok">
+                <option value="0">Mal</option>
+                <option value="1">Bien</option>
+              </select>
+              
+              </div></td>
+              <td>
+                
+                <div class="1tx_edit"><a href="#" class="btn btn-link" style="color:#D8911C" id="rfila_2">Editar</a><a href="#" class="text-secondary">En edicion</a></p></div>                      
+                                  
+              </td>
+            </tr>
+          </form>
+          <form id="3" action="recibido.html" method="get">
+            <tr fila_id="fila_3" id="fila2">
+              <td><div class="fila_data">Cereza</div><input name="alimento" type="text" class="form-control" value="Cereza" size="10"></td>
+              <td><div class="fila_data">46</div><input name="caloria" type="text" class="form-control" value="46" size="4"></td>
+              <td><div class="fila_data">0.4</div><input name="grasa" type="text" class="form-control" step="0.01" value="0.4" size="8"></td>
+              <td><div class="fila_data">0.9</div><input name="proteina" type="text" class="form-control" step="0.01" value="0.9" size="8"></td>
+              <td><div class="fila_data">10.9</div><input name="carbohidrato" type="text" class="form-control" step="0.01" value="10.9" size="8"></td>
+              <td><div class="fila_data1"><div style="color:#000000"><i class="fas fa-skull-crossbones"></i></div>
+                
+              <select name="menu" id="slc3" class="selc_ok">
+                <option value="0">Mal</option>
+                <option value="1">Bien</option>
+              </select>
+              
+              </div></td>
+              <td>
+              
+                <div class="1tx_edit"><a href="#" class="btn btn-link" style="color: #D8911C" id="rfila_3">Editar</a><a href="#" class="text-secondary">En edicion</a></p></div>                      
+                                  
+              </td>
+            </tr>
+          </form>
+          <form id="4" action="recibido.html" method="get">
+            <tr fila_id="fila_4" id="fila3">
+              <td><div class="fila_data">Fresa</div><input name="alimento" type="text" class="form-control" value="Fresa" size="10"></td>
+              <td><div class="fila_data">37</div><input name="caloria" type="text" class="form-control" value="37" size="4"></td>
+              <td><div class="fila_data">0.5</div><input name="grasa" type="text" class="form-control" step="0.01" value="0.5" size="8"></td>
+              <td><div class="fila_data">0.8</div><input name="proteina" type="text" class="form-control" step="0.01" value="0.8" size="8"></td>
+              <td><div class="fila_data">8.3</div><input name="carbohidrato" type="text" class="form-control" step="0.01" value="8.3" size="8"></td>
+              <td><div class="fila_data1"><div style="color:#000000"><i class="fas fa-smile-beam"></i></div> 
+                
+              <select name="menu" id="slc4" class="selc_ok">
+                <option value="0">Mal</option>
+                <option value="1">Bien</option>
+              </select>
+              
+              </div></td>
+              <td>
+                
+                <div class="1tx_edit"><a href="#" class="btn btn-link" style="color: #D8911C" id="rfila_4">Editar</a><a href="#" class="text-secondary">En edicion</a></p></div>                    
+                        
+              </td>
+            </tr>
+          </form>
+        </table>
+      </fieldset>
+      <p id="texto">Pulse aceptar para guardar los cambios o cancelar para anularlos</p>
+      <div>
+        <button onclick="$('#'+editar).submit();console.log('funciono')" class="btn btn-outline-primary" id="save">Aceptar</button>
+        <button  class="btn btn-outline-secondary" id="reset">Cancelar</button>
+      </div>
+    </main>
+  </body>
+</html>
