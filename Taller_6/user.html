@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="utf-8"/>
+		<title></title>
+        <script src="js/validacion.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <main>
+            <form action="" class="formulario" id="formulario">
+                <form class="form-horizontal" method="post" action="">
+
+                    <div class="form-group">
+                        <label for="name" class="cols-sm-2 control-label">Nombre</label>
+                        <div class="cols-sm-10">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" ><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                          <input type="text" id="name" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="addon-wrapping">
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="cols-sm-2 control-label">Apellido</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input type="text" id="lastname" class="form-control" placeholder="Apellido" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="cols-sm-2 control-label">Fecha de nacimiento</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="far fa-clock"></i></span>
+                                <input type="date" id="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="age" class="cols-sm-2 control-label">Edad</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="far fa-calendar-alt"></i></span>
+                                <input type="text" id="edad" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="cols-sm-2 control-label">Correo electronico</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-envelope-open-text"></i></span>
+                                <input type="text" id="mail" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username" class="cols-sm-2 control-label">Username</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-users"></i></span>
+                                <input type="text" id="user" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="addon-wrapping">
+                                <div class="alert alert-danger" role="alert" id="alert">
+                                    No puede ingresar caracter especiales 
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="cols-sm-2 control-label">Password</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-key"></i></span>
+                                <input type="password" id="psw" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                <div class="alert alert-danger" role="alert" id="alert2">
+                                    Los campos de contraseñas son diferentes o esta vacios   
+                                  </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-key"></i></span>
+                                <input type="password" id="psw2" class="form-control"  aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="confirm" class="cols-sm-2 control-label">Sufre de enfermedades</label>
+                        <div>
+                            <input type="radio" name="radio" id="si" class="rtio"><a class="text-secondary" > Si</a>
+                        </div>
+                        <div>
+                            <input type="radio" name="radio" id="no" class="rtio" checked><a class="text-secondary" > No</a>
+                        </div>
+                        
+                    </div>                        
+                    <div class="form-group " id="know" style="display: hidden">
+                        <label for="confirm" class="cols-sm-2 control-label">¿Cuales?</label>
+                        <div><p class="text-secondary">Sarampión-Malaria-Fiebre tifoidea-Hepatitis-Varicela-Gripe-Enfermedades de transmisión sexual</p></div>
+                        <div><textarea class="form-control" id="tx_ar" cols="30" rows="5"></textarea></div>
+                    </div>
+                    <div  class="form-group ">
+                        <button  type="button" class="btn btn-primary btn-lg btn-block login-button" id="register">Register</button>
+                    </div>
+                </form>
+            </form>
+        </main>
+	</body>
+</html>
