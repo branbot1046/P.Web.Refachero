@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title></title>
+	</head>
+	<body>
+        <main>
+            <form action="" class="formulario" id="formulario">
+                <form class="form-horizontal" method="post" action="">
+
+                    <div class="form-group">
+                        <label for="name" class="cols-sm-2 control-label">Nombres</label>
+                        <div class="cols-sm-10">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" ><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                          <input type="text" id="name" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="addon-wrapping">
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="cols-sm-2 control-label">Apellidos</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input type="text" id="lastname" class="form-control" placeholder="Apellido" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="cols-sm-2 control-label">Fecha de nacimiento</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="far fa-clock"></i></span>
+                                <input type="date" id="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+
+                    <div class="form-group">
+                        <label for="email" class="cols-sm-2 control-label">Correo electronico</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-envelope-open-text"></i></span>
+                                <input type="text" id="mail" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username" class="cols-sm-2 control-label">Username</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-users"></i></span>
+                                <input type="text" id="user" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="addon-wrapping">
+                                <div class="alert alert-danger" role="alert" id="alert">
+                                    No puede ingresar caracter especiales 
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="cols-sm-2 control-label">Telefono</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-phone"></i></span>
+                                <input type="text" id="mail" class="form-control" placeholder="telefono" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="cols-sm-2 control-label">Departamento</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-flag"></i></span>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="0">Amazonas</option>
+                                    <option value="1">Antioquia</option>
+                                    <option value="2">Arauca</option>
+                                    <option value="3">Atlantico</option>
+                                    <option value="4">Bolivar</option>
+                                    <option value="5">Boyacá</option>
+                                    <option value="6">Caldas </option>
+                                    <option value="7">Caquetá</option>
+                                    <option value="8">Casanare</option>
+                                    <option value="9">Cauca </option>
+                                    <option value="10">Cesar</option>
+                                    <option value="11">Chocó</option>
+                                    <option value="12">Cundinamarca</option>
+                                    <option value="13">Córdoba</option>
+                                    <option value="14">Guainía</option>
+                                    <option value="15">Guaviare</option>
+                                    <option value="16">Huila </option>
+                                    <option value="17">La Guajira </option>
+                                    <option value="18">Magdalena </option>
+                                    <option value="19">Meta</option>
+                                    <option value="20">Nariño</option>
+                                    <option value="21">Norte de Santander</option>
+                                    <option value="22">Putumayo</option>
+                                    <option value="23">Quindío</option>
+                                    <option value="24">Risaralda</option>
+                                    <option value="25">San Andrés y Providencia</option>
+                                    <option value="26">Santander</option>
+                                    <option value="27">Sucre</option>
+                                    <option value="28">Tolima</option>
+                                    <option value="29">Valle del Cauca</option>
+                                    <option value="30">Vaupés</option>
+                                    <option value="31">Vichada</option>
+
+                                  </select>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="cols-sm-2 control-label">ciudad</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-city"></i></span>
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Choose...</option>
+                                  </select>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="cols-sm-2 control-label">Password</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-key"></i></span>
+                                <input type="password" id="psw" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                <div class="alert alert-danger" role="alert" id="alert2">
+                                    Los campos de contraseñas son diferentes o esta vacios   
+                                  </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-text" ><i class="fas fa-key"></i></span>
+                                <input type="password" id="psw2" class="form-control"  aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+               
+                                  
+                    <div  class="form-group ">
+                        <button  type="button" class="btn btn-primary btn-lg btn-block login-button" id="register">Register</button>
+                     </div>
+                     
+                </form>
+                
+
+
+            </form>
+        </main>
+        
+
+		
+
+		<script src="js/validacion.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	</body>
+</html>
