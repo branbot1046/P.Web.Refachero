@@ -1,0 +1,81 @@
+
+    
+
+<!DOCTYPE html>
+<html lang="en"> 
+            <head> 
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+
+                    body {
+                        font-family: 'Roboto', sans-serif;
+                        background: #E5E5E5;
+                    }
+
+                    main {
+                        max-width: 1700px;
+                        width: 95%;
+                        margin: auto;
+                        padding: 40px;
+                    }
+
+                    .formulario {
+                        display: grid;
+                        gap: 20px;
+                    }
+                </style>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <title></title>
+            </head>
+            <body>
+                <main>
+                    <table class="table">
+                        <div class="card-header">
+                            <h3>Lista de Usuarios</h3>
+                        </div>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombres</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">Tipo de documento</th>
+                                <th scope="col">Documeto</th>
+                                <th scope="col">Lugar de residencia</th>
+                                <th scope="col">Fecha de nacimiento</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Telefono</th>
+                                <th scope="col">Usuario</th>
+                                <th scope="col">Password</th>
+                                <th scope="col">Acciones</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                            {% for persona in personas %}
+                            <tr class="center">
+                                <td>{{persona.nombres}}</td>
+                                <td>{{persona.apellidos}}</td>
+                                <td>{{persona.idtipodocumento}}</td>
+                                <td>{{persona.documento}}</td>
+                                <td>{{persona.lugarresidencia}}</td>
+                                <td>{{persona.fechanacimiento}}</td>
+                                <td>{{persona.email}}</td>
+                                <td>{{persona.telefono}}</td>
+                                <td>{{persona.usuario}}</td>
+                                <td>{{persona.password}}</td>
+                                <td>
+                                    <button  class="btn btn-warning" style="margin-right: 10px;"><a href="{% url 'editar' persona.id %}">Editar</a></button>
+                                    <button  class="btn btn-danger" style="margin-right: 10px;"><a href="{% url 'borrar' persona.id %}">Borrar</a></button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </main>
+                <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+            </body>
+        </div>
+    </div>
+</html>
